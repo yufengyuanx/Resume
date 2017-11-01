@@ -1,0 +1,271 @@
+\documentclass[letterpaper,11pt]{article}
+
+%--------------------Setting Document------------------------%
+
+\usepackage[empty]{fullpage}           % for full page
+\usepackage{titlesec}                  % for set section
+\usepackage{verbatim}
+\usepackage{enumitem}                  % for itemize
+\usepackage[document]{ragged2e}        % for justify
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue} % url color
+
+\usepackage[T1]{fontenc}               % bold small cap
+\usepackage{fontawesome}               % for icons
+% \faLinkedIn, \faGithub, \faHome, \faPhone, \faEnvelope
+
+\usepackage[none]{hyphenat}            % remove hyphenation
+
+\usepackage{scrextend}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                    % clear all header and footer fields
+%\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+%  \titleformat{<command>}
+%	[<shape>]
+%	{<format>}{<label>}{<sep>}{<before-code>}
+%	[<after-code>]
+\titleformat{\section}
+	{\vspace{-10pt}\bfseries\scshape\raggedright\large} % <format>
+	{}
+	{0em}  % indent to left
+	{}
+	[\color{black}\titlerule \vspace{0pt}] % after section, line
+
+
+% Custom commands
+% \webSiteLink  #1: the logo  #2: the link address
+\newcommand{\webSiteLink}[2]{#1\hspace{0.3em} \href{#2}{#2}}
+
+% \myat: reset @ symbol for email address
+\newcommand*\myat{{\fontfamily{ptm}\selectfont @}} 
+
+%-----------------------------------------------------%
+%----------------Resume Start Here--------------------%
+%-----------------------------------------------------%
+\begin{document}
+
+
+
+
+
+
+%-----------------------------------------------------%
+%------------------Part One: Title--------------------%
+%-----------------------------------------------------%
+
+% Name
+\center{\Large{\textbf {Yufeng(Frank) Yuan}}}  
+
+\vskip 0.07in  % add 0.07in line space
+
+% Address, Phone, Email
+\begin{tabular*}
+	{\textwidth}{l@{\extracolsep{\fill}}l@{\extracolsep{\fill}}r}
+	
+	\faHome \hspace{0.3em} 2787 Rainview Drive, San Jose, CA &
+	\faPhone \hspace{0.3em}  $+$1(669)272$-$9816 &
+	\faEnvelope \hspace{0.3em}  \href{mailto:yufengyuanx@gmail.com}{yufengyuanx\myat gmail.com}
+	
+\end{tabular*}
+
+% LinkedIn, GitHub
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+	\webSiteLink{\faLinkedin}{http://www.Linkedin.com/in/yuanyufeng} &
+	\webSiteLink{\faGithub}{https://www.github.com/yufengyuanx} 
+	
+\end{tabular*}
+
+
+
+
+
+%-----------------------------------------------------%
+%-------------------Part Two: Summary-----------------%
+%-----------------------------------------------------%
+\section{Summary}
+\begin{justify}
+Seeking for a full-time \textbf{software developer engineer} position starting immediately. \\
+7 years Computer-Science related study with strong programming, analytic and mathematical skills. Solid computer science knowledge with Algorithm, Data Structure, Network, Machine Learning. Hands-on experiences with \textbf{Java}, \textbf{Python}, MySql, HTML, CSS and JavaScript.
+	
+\end{justify}
+
+
+
+
+
+%-----------------------------------------------------%
+%-----------------Part Three: Education---------------%
+%-----------------------------------------------------%
+\section{Education}
+\setlength{\leftskip}{0cm} % left indent 0cm
+% First Education
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+% 1. Major: --   GPA:  --
+\large\textbf{Master of Computer Science} & \texttt{3.76/4.0}\\
+
+
+% 2. University Name --   Year --
+\-\hspace{2em}\textsc{University of Massachusetts Lowell, College of Science} & \textit{Sep. 2014 - Jun. 2017}	
+\end{tabular*}
+
+
+% 3. Courses
+\begin{addmargin}[2em]{0em}   % addmargin
+\textbf{Courses:} 
+Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Database System, Ubiquitous Computing, Computer \& Network Security, Big Data System Design.
+\end{addmargin}
+
+\vskip 0.07in  % add 0.07 in line space
+
+
+% Second Education
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+% 1. Major: --   GPA:  --
+\large\textbf{Bachelor of Network Engineering} & \texttt{3.0/4.0}\\
+% 2. University Name --   Year --
+\-\hspace{2em}\textsc{Donghua University, College of Computer Science and Technology} & \textit{Sep. 2010 - Jun. 2014}	
+
+\end{tabular*}
+% 3. Courses
+\begin{addmargin}[2em]{0em}   % addmargin
+\textbf{Courses:} C, Data Structure(C++), Java, Operating System, Assembly Programming, Compiler Principles.
+\end{addmargin}
+
+
+
+
+
+
+%-----------------------------------------------------%
+%-------------------Part Four: Skills-----------------%
+%-----------------------------------------------------%
+\section{Skills}
+\begin{itemize}[align=left]\setlength\itemsep{0em}
+  \item \textbf{\textsc{Programming Language:}} Objected-Oriented Design with JAVA, Web Design with HTML, CSS, JavaScript, Statistic Analysis with Python, R. Documentation with \LaTeX.
+  \item \textbf{\textsc{Computer Science:}} Data Structure, Algorithm, Objected-Oriented System Design, Distributed System Design and Development.
+  \item \textbf{\textsc{Data Science:}} Mathematics, Statistics and Probability; Supervised and Unsupervised Machine Learning models, Natural Language Processing.
+%  \item \textbf{\textsc{Language:}}: Strong written and verbal communication skills in English and Chinese.
+\end{itemize}
+
+
+
+
+
+
+%-----------------------------------------------------%
+%------------Part Five: Relevant Projects-------------%
+%-----------------------------------------------------%
+\section{Relevant Projects}
+% 1. Machine Learning
+\begin{itemize}\setlength\itemindent{-0.2in}
+	\item [] \textbf{\textsc{Machine Learning - Visual Question Answering}} (Python, LUA, Neural Network, CNN, LSTM)
+	\setlength\itemsep{0em}
+	\begin{itemize}[topsep=-1em]
+	\setlength\itemindent{-0.25in}  % set item left indent
+	\setlength\itemsep{-0.1em} % set subitem sep
+		\item [\textbullet]Designed model to answer open-end question for a given abstract. This is a competition from Kaggle.
+		\item [\textbullet]Used 5-layer CNN for image recognization and 2-layer LSTM Networks for Natural Language Processing.
+		\item [\textbullet]Applied Parameters Optimization and Fine-tuning and \textbf{improved the accuracy from 60\% to 72\%}.
+	\end{itemize}
+	
+	
+	
+	\item [] \textbf{\textsc{Android Application -  Driving Behavior Analysis}} (Android, PHP, OBD II, Google Map)
+	\setlength\itemsep{0em}
+	
+	\begin{itemize}[topsep=-1em]
+	\setlength\itemindent{-0.25in}  % set item left indent
+	\setlength\itemsep{-0.1em} % set subitem sep
+		\item [\textbullet]Developed an Android Application for detect driver\rq s driving data, and analyze the driving behaviors.
+		\item [\textbullet]Collected data from OBD II API(via Bluetooth), Google Map API and Android Device. 
+		\item [\textbullet]Built server side with MySql to store the data, PHP for analyze data.
+		\item [\textbullet]Designed algorithms and analyzed data to explore driver\rq s driving behavior.
+		\item [\textbullet]Generated the report from the server to give users feedback and review.
+	\end{itemize}
+	
+	
+	
+	\item [] \textbf{\textsc{Network Security - AES Encryption }} (C, Socket, AES-128, BBS, Diffie-Hellman Key Exchange)
+	\setlength\itemsep{0em}
+	\begin{itemize}[topsep=-1em]
+	\setlength\itemindent{-0.25in}  % set item left indent
+	\setlength\itemsep{-0.1em} % set subitem sep
+		\item [\textbullet]Designed a secure file transfer system with Socket Programming.
+		\item [\textbullet]Implemented AES-128 encryption and decryption algorithm by C language.
+		\item [\textbullet]Generated random key as a public key for client and server by BBS algorithm.
+		\item [\textbullet] Implemented Diffie-Hellman key exchange algorithm to exchange keys between client and server.
+	\end{itemize}
+	
+	
+%option for future	
+%	\item [] \textbf{\textsc{Natural Language Processing - Word2Vec }} (Python, Tensorflow, AWS, Numpy)
+%	\setlength\itemsep{0em}
+%	\begin{itemize}[topsep=-1em]
+%	\setlength\itemindent{-0.25in}  % set item left indent
+%	\setlength\itemsep{-0.25em} % set subitem sep
+%		\item [\textbullet] a
+%		\item [\textbullet] b
+%		\item [\textbullet] c
+%		\item [\textbullet] d
+%	\end{itemize}
+
+	
+\end{itemize}
+
+
+
+
+
+%-----------------------------------------------------%
+%-------------Part Six: Working Experience------------%
+%-----------------------------------------------------%
+\section{Working Experience}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\-\hspace{1.3em}\textbf{\textsc{{Software Engineer Internship}}} (Beijing Haosimai Info. Tec. Co. Ltd.) & \textit{May. 2013 - Aug. 2013}	
+\end{tabular*}\vspace*{-0.5\baselineskip}    % set space after tabular
+\begin{itemize}[align=left]\setlength\itemsep{0em}
+
+	\item [\textbullet]Designed and developed responsive webpages with Bootstrap framework and JQuery.
+	\item [\textbullet]Researched high volume keywords and implemented SEO for improving the quality of the website.
+	\item [\textbullet]Collected data from back-end database and analyzed customer information.
+	
+\end{itemize}
+
+
+
+%option for future	
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%\-\hspace{1.3em}\textbf{\textsc{{Research Assistant}}} (University of Massachusetts Lowell) & \textit{May. 2016 - Aug. 2016}	
+%\end{tabular*}\vspace*{-0.5\baselineskip}    % set space after tabular
+%\begin{itemize}[align=left]\setlength\itemsep{0em}
+%
+%	\item [\textbullet]database
+%	\item [\textbullet]preporcessing
+%	\item [\textbullet]balabala
+%	
+%\end{itemize}
+
+
+\end{document}
