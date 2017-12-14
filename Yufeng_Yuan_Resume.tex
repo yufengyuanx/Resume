@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 %--------------------Setting Document------------------------%
 
@@ -27,10 +27,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.75in} % top margin
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -131,10 +131,10 @@ Seeking for a full-time \textbf{software developer engineer} position starting i
 
 
 % 3. Courses
-\begin{addmargin}[2em]{0em}   % addmargin
-\textbf{Courses:} 
-Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Database System, Ubiquitous Computing, Computer \& Network Security, Big Data System Design.
-\end{addmargin}
+%\begin{addmargin}[2em]{0em}   % addmargin
+%\textbf{Courses:} 
+%Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Database System, Ubiquitous Computing, Computer \& Network Security, Big Data System Design.
+%\end{addmargin}
 
 \vskip 0.07in  % add 0.07 in line space
 
@@ -148,9 +148,9 @@ Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Databa
 
 \end{tabular*}
 % 3. Courses
-\begin{addmargin}[2em]{0em}   % addmargin
-\textbf{Courses:} C, Data Structure(C++), Java, Operating System, Assembly Programming, Compiler Principles.
-\end{addmargin}
+%\begin{addmargin}[2em]{0em}   % addmargin
+%\textbf{Courses:} C, Data Structure(C++), Java, Operating System, Assembly Programming, Compiler Principles.
+%\end{addmargin}
 
 
 
@@ -162,10 +162,16 @@ Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Databa
 %-----------------------------------------------------%
 \section{Skills}
 \begin{itemize}[align=left]\setlength\itemsep{0em}
-  \item \textbf{\textsc{Programming Language:}} Objected-Oriented Design with JAVA, Web Design with HTML, CSS, JavaScript, Statistic Analysis with Python, R. Documentation with \LaTeX.
-  \item \textbf{\textsc{Computer Science:}} Data Structure, Algorithm, Objected-Oriented System Design, Distributed System Design and Development.
-  \item \textbf{\textsc{Data Science:}} Mathematics, Statistics and Probability; Supervised and Unsupervised Machine Learning models, Natural Language Processing.
-%  \item \textbf{\textsc{Language:}}: Strong written and verbal communication skills in English and Chinese.
+%  \item \textbf{Programming Language:} Objected-Oriented Design with JAVA, Web Design with HTML, CSS, JavaScript, Statistic Analysis with Python, R. Documentation with \LaTeX.
+  \item \textbf{Programming Language:} \textbf{Java}, \textbf{Python}, C, CSS, HTML5, JavaScript.
+  
+  \item \textbf{Computer Science:} Data Structure, Algorithm, Objected-Oriented System Design. 
+   %optional {Distributed System Design and Development.}
+   
+  \item \textbf{Data Science:} Mathematics, Statistics and Probability; Supervised and Unsupervised Learning.
+  %optional { Learning models, Natural Language Processing.}
+  
+% \item \textbf{\textsc{Language:}}: Strong written and verbal communication skills in English and Chinese.
 \end{itemize}
 
 
@@ -179,7 +185,7 @@ Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Databa
 \section{Relevant Projects}
 % 1. Machine Learning
 \begin{itemize}\setlength\itemindent{-0.2in}
-	\item [] \textbf{\textsc{Machine Learning - Visual Question Answering}} (Python, LUA, Neural Network, CNN, LSTM)
+	\item [] \textbf{Machine Learning - Visual Question Answering} (Python, LUA, Neural Network, CNN, LSTM)
 	\setlength\itemsep{0em}
 	\begin{itemize}[topsep=-1em]
 	\setlength\itemindent{-0.25in}  % set item left indent
@@ -190,8 +196,33 @@ Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Databa
 	\end{itemize}
 	
 	
+	\item [] \textbf{Java Web Development - Event Search and Recommendation} (Java, RESTful APIs, AJAX, MySQL)
+	\setlength\itemsep{0em}
+	\begin{itemize}[topsep=-1em]
+	\setlength\itemindent{-0.25in}  % set item left indent
+	\setlength\itemsep{-0.1em} % set subitem sep
+		\item [] \webSiteLink{\faGithub}{https://github.com/yufengyuanx/EventRecommendationSystem}
+		\item [\textbullet] Developed a dynamic web page for users to search restaurants and update preference.
+		\item [\textbullet] Improved personalized restaurant recommendation based on search history and favorite record. \\
+		
+		\item[] \textbf{Back End}
+			\begin{itemize}[topsep=-1em]
+				\item[\textbullet] Created Java servlets with RESTful APIs to handle HTTP requests and responses
+				\item[\textbullet] Built relational and NoSQL databases (MySQL, MongoDB) to capture real restaurant data from Yelp API.
+				\item[\textbullet] Designed algorithms (e.g., content-based recommendation) to implement restaurant recommendation.
+				\item[\textbullet] Deployed server side to Amazon EC2 which is able to handle 150 queries per second tested by Apache JMeter.
+			\end{itemize}
+		
+		\item[] \textbf{Front End}
+			\begin{itemize}[topsep=-1em]
+				\item[\textbullet] Designed an interactive web page utilizing AJAX technology (HTML, CSS and JavaScript)
+				\item[\textbullet] Developed an Android mobile app for users to search restaurants based on locations
+			\end{itemize}
+	\end{itemize}
 	
-	\item [] \textbf{\textsc{Android Application -  Driving Behavior Analysis}} (Android, PHP, OBD II, Google Map)
+	
+	
+	\item [] \textbf{Android Application -  Driving Behavior Analysis} (Android, PHP, OBD II, Google Map)
 	\setlength\itemsep{0em}
 	
 	\begin{itemize}[topsep=-1em]
@@ -206,16 +237,16 @@ Analysis of Algorithm, Machine Learning, Database, Data Mining,  Advanced Databa
 	
 	
 	
-	\item [] \textbf{\textsc{Network Security - AES Encryption }} (C, Socket, AES-128, BBS, Diffie-Hellman Key Exchange)
-	\setlength\itemsep{0em}
-	\begin{itemize}[topsep=-1em]
-	\setlength\itemindent{-0.25in}  % set item left indent
-	\setlength\itemsep{-0.1em} % set subitem sep
-		\item [\textbullet]Designed a secure file transfer system with Socket Programming.
-		\item [\textbullet]Implemented AES-128 encryption and decryption algorithm by C language.
-		\item [\textbullet]Generated random key as a public key for client and server by BBS algorithm.
-		\item [\textbullet] Implemented Diffie-Hellman key exchange algorithm to exchange keys between client and server.
-	\end{itemize}
+%	\item [] \textbf{\textsc{Network Security - AES Encryption }} (C, Socket, AES-128, BBS, Diffie-Hellman Key Exchange)
+%	\setlength\itemsep{0em}
+%	\begin{itemize}[topsep=-1em]
+%	\setlength\itemindent{-0.25in}  % set item left indent
+%	\setlength\itemsep{-0.1em} % set subitem sep
+%		\item [\textbullet]Designed a secure file transfer system with Socket Programming.
+%		\item [\textbullet]Implemented AES-128 encryption and decryption algorithm by C language.
+%		\item [\textbullet]Generated random key as a public key for client and server by BBS algorithm.
+%		\item [\textbullet] Implemented Diffie-Hellman key exchange algorithm to exchange keys between client and server.
+%	\end{itemize}
 	
 	
 %option for future	
